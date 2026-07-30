@@ -25,11 +25,11 @@
 
 | Home | Courses |
 |------|---------|
-| ![Home](screenshots/home.png) | ![Courses](screenshots/courses.png) |
+| ![Home](screenshots/Home.png) | ![Courses](screenshots/Courses.png) |
 
 | Notes | Player |
 |------|---------|
-| ![Notes](screenshots/notes.png) | ![Player](screenshots/player.png) |
+| ![Notes](screenshots/Note.png) | ![Player](screenshots/Player.png) |
 
 ---
 
