@@ -29,7 +29,11 @@
 
 | Notes | Player |
 |------|---------|
-| ![Notes](screenshots/Note.png) | ![Player](screenshots/Player.png) |
+| ![Notes](screenshots/Notes.png) | ![Player](screenshots/Players.png) |
+
+| Playlist | Setting |
+|------|---------|
+| ![Notes](screenshots/Playlists.png) | ![Player](screenshots/Setting.png) |
 
 ---
 
