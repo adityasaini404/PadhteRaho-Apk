@@ -42,7 +42,7 @@
 Download the latest version from the **Releases** section.
 
 ➡️ **Latest APK:**  
-https://github.com/USERNAME/REPOSITORY/releases/latest
+https://github.com/adityasaini404/PadhteRaho-Apk/releases
 
 ---
 
