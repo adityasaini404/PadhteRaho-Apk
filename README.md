@@ -1,6 +1,7 @@
 # 📚 PadhteRaho
 
 <p align="center">
+  <img src="" width="150" alt="PadhteRaho App Icon">
   <h3 align="center">Learn Smarter, Anytime, Anywhere 🚀</h3>
   <p align="center">
     A free Android educational application with category-wise courses, playlists, and study resources.
