@@ -42,6 +42,9 @@
 
 Download the latest version from the **Releases** section.
 
+[![Get it on Orion Store](https://raw.githubusercontent.com/RookieEnough/Orion-Store/refs/heads/main/assets/orion-badge.png)](https://rookieenough.github.io/Orion-Data/redirect.html?id=padhteraho)
+
+
 ➡️ **Latest APK:**  
 https://github.com/adityasaini404/PadhteRaho-Apk/releases
 
