@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brand -->
+    <color name="primary">#2563EB</color>
+    <color name="primaryDark">#1D4ED8</color>
+    <color name="accent">#10B981</color>
+
+    <!-- Background -->
+    <color name="background">#F8FAFC</color>
+    <color name="surface">#FFFFFF</color>
+
+    <!-- Text -->
+    <color name="textSecondary">#111827</color>
+    <color name="textPrimary">#2A2B2E</color>
+
+    <!-- Status -->
+    <color name="success">#22C55E</color>
+    <color name="warning">#F59E0B</color>
+    <color name="danger">#EF4444</color>
+    <color name="img">#fff</color>
+
+    <!-- Others -->
+    <color name="divider">#E5E7EB</color>
+    <color name="black">#121212</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Category Card Colors -->
+    <color name="cat_programming">#E3F2FD</color>
+    <color name="cat_web">#E8F5E9</color>
+    <color name="cat_android">#F3E5F5</color>
+    <color name="cat_dsa">#FFF3E0</color>
+    <color name="cat_ai">#FCE4EC</color>
+    <color name="cat_data">#E0F7FA</color>
+    <color name="cat_english">#FFFDE7</color>
+    <color name="cat_interview">#FBE9E7</color>
+
+    <!-- Default -->
+    <color name="cat_default">#F5F5F5</color>
+
+</resources>

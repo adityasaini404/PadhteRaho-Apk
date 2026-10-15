@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:hint="Search Courses..."
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="10dp"
+        android:background="@android:drawable/edit_text"
+        android:paddingHorizontal="16dp"
+        android:inputType="text"
+        android:imeOptions="actionSearch"/>
+
+    <TextView
+        android:id="@+id/txtRecent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Added Courses"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

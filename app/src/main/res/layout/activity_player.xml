@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/background">
+
+    <!-- VIDEO PLAYER -->
+    <!-- PREMIUM PLAYER -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- YouTube Player -->
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/youtubePlayerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                app:enableAutomaticInitialization="false"/>
+
+            <View
+                android:id="@+id/playerTouchLayer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+
+            <!-- Top Gradient -->
+
+            <View
+                android:id="@+id/topGradient"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="top"
+                android:clickable="true"
+                android:focusable="true"/>
+
+
+
+            <!-- Bottom Gradient -->
+
+            <View
+                android:id="@+id/bottomGradient"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="bottom"
+                android:background="#CC000000"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+            <!-- Center Controls -->
+
+            <LinearLayout
+                android:id="@+id/playerControls"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnReplay10"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@android:color/transparent"
+                    android:src="@android:drawable/ic_media_rew"
+                    app:tint="@color/white" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    app:strokeWidth="2dp"
+                    android:background="#CC000000"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="10dp">
+
+
+                <ImageButton
+                    android:id="@+id/btnPlayPause"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#CC000000"
+                    android:src="@android:drawable/ic_media_play"
+                    />
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="18dp"
+                    android:background="#CC000000"
+                    app:cardCornerRadius="40dp">
+
+                <ImageButton
+                    android:id="@+id/btnForward10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#CC000000"
+                    android:src="@android:drawable/ic_media_ff"
+                    app:tint="@color/white" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+
+            <!-- Bottom Controls -->
+
+            <LinearLayout
+                android:id="@+id/bottomControls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/sliderProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:thumbRadius="20dp"
+                    app:thumbHeight="20dp"
+                    app:thumbWidth="20dp"
+                    app:trackHeight="10dp"
+                    app:thumbColor="@color/primary"
+                    app:trackColor="@color/textSecondary"
+                    app:trackColorActive="@color/primary"
+                    android:valueFrom="0"
+                    android:valueTo="100"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginHorizontal="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/txtCurrentTime"
+                        android:layout_width="38dp"
+                        android:layout_height="wrap_content"
+                        android:text="00:00"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="1dp"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+
+
+                    <TextView
+                        android:id="@+id/txtDuration"
+                        android:layout_width="38dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:text="00:00"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+
+                    <ImageButton
+                        android:id="@+id/btnLock"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:src="@android:drawable/ic_lock_lock"
+                        app:tint="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/txtSpeed"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:gravity="center"
+                        android:text="1x"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+
+
+                    <ImageButton
+                        android:id="@+id/btnFullscreen"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_fullscreen"
+                        app:tint="@android:color/white" />
+
+                    <ImageButton
+                        android:id="@+id/btnSettings"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/settings"
+                        app:tint="@android:color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnUnlock"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/bg_unlock_circle"
+                android:src="@android:drawable/ic_lock_lock"
+                android:visibility="gone"
+                app:tint="@android:color/white"/>
+
+        </FrameLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/loadingPlayer"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:indicatorSize="48dp"
+            app:trackThickness="4dp"/>
+
+        <!-- VIDEO INFO -->
+
+
+        <LinearLayout
+            android:id="@+id/layoutVideoInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+
+
+            <TextView
+
+                android:id="@+id/txtTitle"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:textSize="20sp"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/textPrimary"
+
+                android:maxLines="2"/>
+
+
+
+            <TextView
+                android:id="@+id/txtTeacher"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="6dp"
+
+                android:textSize="14sp"
+
+                android:textColor="@color/textSecondary"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <!-- CONTROL AREA -->
+
+
+        <com.google.android.material.card.MaterialCardView
+
+
+            android:id="@+id/cardControls"
+
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginHorizontal="16dp"
+
+            android:layout_marginBottom="18dp"
+
+
+            app:cardCornerRadius="20dp"
+
+            app:cardElevation="3dp"
+
+            app:strokeWidth="1dp"
+
+            app:strokeColor="@color/divider">
+
+
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:padding="12dp">
+
+
+
+
+
+                <com.google.android.material.button.MaterialButton
+
+
+                    android:id="@+id/btnPrevious"
+
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="50dp"
+
+                    android:layout_weight="1"
+
+                    android:text="◀ Previous"
+
+
+                    android:textAllCaps="false"
+
+                    android:textStyle="bold"
+
+
+                    app:cornerRadius="16dp"
+
+                    app:backgroundTint="#EEF5FF"
+
+                    android:textColor="@color/primary"/>
+
+
+
+
+
+                <Space
+
+                    android:layout_width="12dp"
+
+                    android:layout_height="1dp"/>
+
+
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNext"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Next ▶"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    app:cornerRadius="16dp"
+                    app:backgroundTint="@color/primary"/>
+
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+        <!-- UP NEXT HEADER -->
+
+
+        <LinearLayout
+            android:id="@+id/layoutUpNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="18dp"
+            android:paddingBottom="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Up Next"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@color/textPrimary"/>
+
+
+
+
+            <TextView
+
+                android:id="@+id/txtUpNextCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Videos"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="@color/textSecondary"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+
+            android:id="@+id/recyclerUpNext"
+
+
+            android:layout_width="match_parent"
+
+
+            android:layout_height="wrap_content"
+
+
+            android:paddingBottom="30dp"
+
+
+            android:clipToPadding="false"/>
+
+
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>

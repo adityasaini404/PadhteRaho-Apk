@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚙ Settings"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#111111"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage your app"
+            android:textColor="#777777"
+            android:layout_marginTop="4dp"/>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            app:strokeColor="#D6E9FF"
+            app:cardBackgroundColor="#F8FBFF"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/itemDarkMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:textColor="@color/textPrimary"
+                    android:text="🌙  Dark Mode"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE"/>
+
+                <TextView
+                    android:id="@+id/itemRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:textColor="@color/textPrimary"
+                    android:text="⭐  Rate App"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE"/>
+
+                <TextView
+                    android:id="@+id/itemShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:textColor="@color/textPrimary"
+                    android:text="📤  Share App"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE"/>
+
+                <TextView
+                    android:id="@+id/itemFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:textColor="@color/textPrimary"
+                    android:text="💬  Feedback"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE"/>
+
+                <TextView
+                    android:id="@+id/itemPrivacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:textColor="@color/textPrimary"
+                    android:text="📜  Privacy Policy"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE"/>
+
+                <TextView
+                    android:id="@+id/itemTerms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:textColor="@color/textPrimary"
+                    android:text="📄  Terms and Conditions"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE"/>
+
+                <TextView
+                    android:id="@+id/itemContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:textColor="@color/textPrimary"
+                    android:text="📧  Contact Us"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE"/>
+
+                <TextView
+                    android:id="@+id/itemRequestCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:textColor="@color/textPrimary"
+                    android:text="📢  Request a Course"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE"/>
+
+                <TextView
+                    android:id="@+id/itemFaq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:textColor="@color/textPrimary"
+                    android:text="❓  FAQ"
+                    android:textSize="17sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE"/>
+
+                <TextView
+                    android:id="@+id/itemUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:textColor="@color/textPrimary"
+                    android:text="🔄  Check for Updates"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:id="@+id/itemSupport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="18dp"
+                    android:textColor="@color/textPrimary"
+                    android:text="❤️  Support Developer"
+                    android:textSize="17sp"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+
+            app:strokeColor="#D6E9FF"
+            app:cardBackgroundColor="#F8FBFF"
+            app:cardCornerRadius="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/aditya"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/CircleImage"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aditya Saini"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:layout_marginTop="14dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Developer"
+                    android:textColor="@color/textSecondary"/>
+
+                <View
+                    android:layout_width="60dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/accent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📘 PadhteRaho"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Learn Anytime • Anywhere"
+                    android:layout_marginTop="6dp"
+                    android:textColor="#666666"/>
+
+                <TextView
+                    android:id="@+id/txtVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Version 1.0.0"
+                    android:textStyle="bold"
+                    android:textColor="@color/warning"
+                    android:textSize="14sp"
+                    android:layout_marginTop="18dp"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

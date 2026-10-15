@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:id="@+id/cardCourse"
+
+    android:layout_width="wrap_content"
+
+    android:layout_height="wrap_content"
+
+    android:layout_margin="6dp"
+
+    android:clickable="true"
+
+    android:focusable="true"
+
+    android:foreground="?attr/selectableItemBackground"
+
+
+    app:cardCornerRadius="18dp"
+
+    app:cardElevation="2dp"
+
+    app:cardBackgroundColor="@color/surface"
+
+    app:strokeColor="@color/divider"
+
+    app:strokeWidth="1dp">
+
+
+
+    <LinearLayout
+
+        android:layout_width="170dp"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+
+        <!-- Thumbnail -->
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="95dp">
+
+
+
+            <ImageView
+
+                android:id="@+id/imgThumbnail"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/padhteraho"/>
+
+
+
+
+            <View
+
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+
+                android:background="@drawable/bg_thumbnail_overlay"/>
+
+
+
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:layout_width="38dp"
+
+                android:layout_height="38dp"
+
+                android:layout_gravity="center"
+
+                app:cardCornerRadius="20dp"
+
+                app:cardBackgroundColor="#CCFFFFFF"
+
+                app:cardElevation="0dp">
+
+
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:padding="10dp"
+
+                    android:src="@android:drawable/ic_media_play"
+
+                    app:tint="@color/primary"/>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+        </FrameLayout>
+
+
+
+
+
+        <!-- Content -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            android:padding="12dp">
+
+
+
+
+
+            <!-- Category -->
+
+
+            <TextView
+
+                android:id="@+id/txtCategory"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:text="Programming"
+
+                android:textSize="11sp"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/primary"/>
+
+
+
+
+
+            <!-- Title -->
+
+
+            <TextView
+
+                android:id="@+id/txtTitle"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+
+                android:text="Java Complete Course"
+
+                android:textSize="14sp"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/textPrimary"
+
+                android:maxLines="2"
+
+                android:ellipsize="end"/>
+
+
+
+
+
+            <!-- Teacher -->
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+
+                android:gravity="center_vertical">
+
+
+
+                <ImageView
+
+                    android:layout_width="14dp"
+
+                    android:layout_height="14dp"
+
+                    android:src="@android:drawable/ic_menu_myplaces"
+
+                    app:tint="@color/textSecondary"/>
+
+
+
+
+                <TextView
+
+                    android:id="@+id/txtTeacher"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="5dp"
+
+                    android:text="Apna College"
+
+                    android:textSize="11sp"
+
+                    android:textColor="@color/textSecondary"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <View
+
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+
+                android:layout_marginTop="10dp"
+
+                android:background="@color/divider"/>
+
+
+
+
+            <!-- Bottom -->
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="8dp"
+
+                android:gravity="center_vertical">
+
+
+
+                <TextView
+
+                    android:id="@+id/txtDuration"
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="35 Hours"
+
+                    android:textSize="11sp"
+
+                    android:textStyle="bold"
+
+                    android:textColor="@color/accent"/>
+
+
+
+                <View
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="1dp"
+
+                    android:layout_weight="1"/>
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="Start →"
+
+                    android:textSize="11sp"
+
+                    android:textStyle="bold"
+
+                    android:textColor="@color/accent"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="📚 Manage Notes"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            android:textColor="@color/textPrimary"/>
+
+
+
+        <!-- Icon URL -->
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/etIconUrl"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Icon URL"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!-- Title -->
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="12dp"
+
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/etNoteTitle"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Note Name"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!-- PDF URL -->
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="12dp"
+
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/etPdfUrl"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="PDF URL"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/btnAddNote"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            android:text="Add Note"/>
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30dp"
+
+            android:text="Uploaded Notes"
+
+            android:textSize="20sp"
+
+            android:textStyle="bold"
+
+            android:textColor="@color/textPrimary"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/adminNotesRecycler"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sleep Timer"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#111111"
+        android:paddingBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Off"/>
+
+        <RadioButton
+            android:id="@+id/rb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 Minutes"/>
+
+        <RadioButton
+            android:id="@+id/rb10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 Minutes"/>
+
+        <RadioButton
+            android:id="@+id/rb15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 Minutes"/>
+
+        <RadioButton
+            android:id="@+id/rb30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 Minutes"/>
+
+        <RadioButton
+            android:id="@+id/rb45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45 Minutes"/>
+
+        <RadioButton
+            android:id="@+id/rb60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60 Minutes"/>
+
+    </RadioGroup>
+
+</LinearLayout>

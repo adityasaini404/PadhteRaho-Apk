@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="24dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Top Handle -->
+
+        <View
+            android:layout_width="45dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_handle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="📢 Request a Course"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/textPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Can't find the course you're looking for? Tell us and we'll try to add it in future updates."
+            android:textColor="@color/textSecondary"
+            android:textSize="15sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Course Name"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="18dp"
+            app:boxCornerRadiusTopEnd="18dp"
+            app:boxCornerRadiusBottomStart="18dp"
+            app:boxCornerRadiusBottomEnd="18dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Teacher (Optional)"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="18dp"
+            app:boxCornerRadiusTopEnd="18dp"
+            app:boxCornerRadiusBottomStart="18dp"
+            app:boxCornerRadiusBottomEnd="18dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtTeacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSendRequest"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="26dp"
+            android:text="Send Request"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            app:cornerRadius="18dp"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

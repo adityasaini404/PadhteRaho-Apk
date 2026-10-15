@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:strokeColor="#D6E9FF"
+    app:cardBackgroundColor="#F8FBFF"
+    app:cardCornerRadius="28dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Handle -->
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_handle"/>
+
+        <!-- Coffee Image -->
+
+        <ImageView
+            android:id="@+id/imgCoffee"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/buy_me_coffee"/>
+
+        <!-- Title -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="❤️ Support PadhteRaho"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Subtitle -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Every cup of coffee helps us build better learning experiences for students."
+            android:textAlignment="center"
+            android:textColor="#6B7280"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Coffee Button -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCoffee"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="24dp"
+            android:text="Buy Me a Coffee"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            app:iconSize="24dp"
+            android:textColor="#111111"
+            android:backgroundTint="#FFE875"
+            app:cornerRadius="18dp"
+            app:icon="@drawable/buy_me_coffee"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            app:iconTint="@null"/>
+
+        <!-- GitHub -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGithub"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="12dp"
+            android:text="GitHub"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            app:cornerRadius="18dp"
+            app:iconSize="24dp"
+            app:backgroundTint="#000000"
+            android:textColor="#FFFFFF"
+            app:icon="@drawable/github"
+            app:iconGravity="textStart"
+            app:iconPadding="15dp"
+            app:iconTint="@null"/>
+
+        <!-- Instagram -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnInstagram"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="12dp"
+            android:text="Instagram"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:iconSize="24dp"
+            android:textAllCaps="false"
+            app:cornerRadius="18dp"
+            app:backgroundTint="#EBE5EB"
+            android:textColor="#E01919"
+            app:icon="@drawable/instagram_svgrepo_com"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            app:iconTint="@null"/>
+
+        <!-- Footer -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Made with ❤️ in India\n\nThank you for supporting free education."
+            android:gravity="center"
+            android:textColor="#9CA3AF"
+            android:layout_marginTop="22dp"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="24dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Handle -->
+
+        <View
+            android:layout_width="45dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_handle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="💬 Contact Us"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/textPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Choose your preferred contact method."
+            android:textColor="@color/textSecondary"
+            android:textSize="15sp"/>
+
+        <!-- WhatsApp -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnWhatsapp"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="18dp"
+            app:strokeColor="#D6E9FF"
+            app:cardBackgroundColor="#F8FBFF"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="18dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/whatsapp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="18dp"
+                    android:text="WhatsApp"
+                    android:textStyle="bold"
+                    android:textSize="17sp"/>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/arrow_right"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- SMS -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnSms"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="14dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="18dp"
+            app:strokeColor="#D6E9FF"
+            app:cardBackgroundColor="#F8FBFF"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="18dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/sms"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="18dp"
+                    android:text="SMS"
+                    android:textStyle="bold"
+                    android:textSize="17sp"/>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/arrow_right"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Instagram -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnInstagram"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="18dp"
+            app:strokeColor="#D6E9FF"
+            app:cardBackgroundColor="#F8FBFF"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="18dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/instagram_svgrepo_com"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="18dp"
+                    android:text="Instagram"
+                    android:textStyle="bold"
+                    android:textSize="17sp"/>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/arrow_right"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

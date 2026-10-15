@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginHorizontal="14dp"
+    android:layout_marginVertical="8dp"
+
+    app:cardCornerRadius="18dp"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="@color/surface"
+
+    app:strokeColor="@color/divider"
+    app:strokeWidth="1dp">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+        <!-- Thumbnail Section -->
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+
+
+            <ImageView
+
+                android:id="@+id/imgThumbnail"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:scaleType="centerCrop"/>
+
+
+
+            <!-- Dark overlay -->
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="#55000000"/>
+
+
+
+            <!-- Play Button -->
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+
+                android:layout_gravity="center"
+
+                app:cardCornerRadius="50dp"
+
+                app:cardBackgroundColor="@color/primary"
+
+                app:cardElevation="6dp">
+
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:src="@drawable/play_circle"
+                    app:tint="@color/white" />
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <!-- Duration -->
+
+            <TextView
+
+                android:id="@+id/txtDuration"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="bottom|end"
+
+                android:layout_margin="10dp"
+
+                android:paddingHorizontal="8dp"
+
+                android:paddingVertical="4dp"
+
+                android:text="12:34"
+
+                android:textSize="12sp"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/white"
+
+                android:background="@drawable/duration_bg"/>
+
+
+
+        </FrameLayout>
+
+
+
+
+        <!-- Details -->
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            android:padding="16dp">
+
+
+            <TextView
+
+                android:id="@+id/txtTitle"
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/textPrimary"
+
+                android:textSize="17sp"
+
+                android:textStyle="bold"
+
+                android:maxLines="2"/>
+
+
+
+            <TextView
+
+                android:id="@+id/txtSubtitle"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="6dp"
+
+                android:text="Apna College"
+
+                android:textColor="@color/textSecondary"
+
+                android:textSize="14sp"/>
+
+
+
+            <!-- Progress indicator -->
+
+            <View
+
+                android:layout_width="match_parent"
+
+                android:layout_height="4dp"
+
+                android:layout_marginTop="12dp"
+
+                android:background="@color/accent"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

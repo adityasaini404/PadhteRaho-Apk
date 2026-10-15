@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+
+    <ImageView
+        android:id="@+id/imgAppIcon"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/padhteraho"
+        android:layout_marginBottom="16dp"/>
+
+
+
+    <TextView
+
+        android:id="@+id/txtAppName"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:text="PadhteRaho"
+
+        android:textSize="26sp"
+
+        android:textStyle="bold"
+
+        android:textColor="#111111"/>
+
+
+
+    <TextView
+
+        android:id="@+id/txtDescription"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+
+        android:layout_marginTop="12dp"
+
+        android:text="Learn anytime, anywhere with free educational courses."
+
+        android:textSize="14sp"
+
+        android:textColor="#666666"/>
+
+
+
+    <TextView
+
+        android:id="@+id/txtVersion"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="18dp"
+
+        android:text="Version 1.0"
+
+        android:textSize="14sp"
+
+        android:textColor="#777777"/>
+
+
+
+    <TextView
+
+        android:id="@+id/txtDeveloper"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+
+        android:text="Developed by Aditya"
+
+        android:textSize="15sp"
+
+        android:textStyle="bold"
+
+        android:textColor="#111111"/>
+
+
+</LinearLayout>

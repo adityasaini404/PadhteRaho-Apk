@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+
+    android:layout_margin="8dp"
+
+    android:clickable="true"
+    android:focusable="true"
+
+    android:foreground="?attr/selectableItemBackground"
+
+    app:cardCornerRadius="24dp"
+    app:cardElevation="3dp"
+
+    app:cardBackgroundColor="#F8FBFF"
+
+    app:strokeColor="#D6E9FF"
+    app:strokeWidth="1dp">
+
+
+    <!-- Top Color Line -->
+
+    <View
+        android:id="@+id/colorView"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="10dp"
+
+        android:background="@color/accent"/>
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+
+        android:padding="18dp">
+
+
+
+        <!-- Top Row -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal">
+
+
+
+            <!-- Icon Container -->
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:id="@+id/iconContainer"
+
+                android:layout_width="60dp"
+
+                android:layout_height="60dp"
+
+                app:cardCornerRadius="20dp"
+
+                app:cardElevation="0dp"
+
+                app:cardBackgroundColor="#FFF3E0">
+
+
+
+                <ImageView
+
+                    android:id="@+id/noteIcon"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:padding="12dp"
+
+                    android:scaleType="centerCrop"
+
+                    android:src="@drawable/notes_svg"/>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+            <!-- Arrow -->
+
+            <TextView
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:gravity="end"
+
+                android:text="→"
+
+                android:textSize="26sp"
+
+                android:textColor="@color/accent"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <!-- Note Title -->
+
+
+        <TextView
+
+            android:id="@+id/txtTitle"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="22dp"
+
+            android:text="Java Notes"
+
+            android:textSize="19sp"
+
+            android:textStyle="bold"
+
+            android:textColor="@color/textPrimary"/>
+
+
+
+
+        <!-- Subtitle -->
+
+
+        <TextView
+
+            android:id="@+id/txtSubtitle"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+
+            android:text="Tap to Open PDF"
+
+            android:textSize="13sp"
+
+            android:textColor="@color/textSecondary"/>
+
+
+
+
+        <!-- Accent Line -->
+
+
+        <View
+
+            android:layout_width="45dp"
+
+            android:layout_height="4dp"
+
+            android:layout_marginTop="12dp"
+
+            android:background="@color/accent"/>
+
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

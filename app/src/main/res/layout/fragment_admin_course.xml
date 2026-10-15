@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F8FAFC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Course"
+            android:textStyle="bold"
+            android:textSize="28sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create a new course"
+            android:textColor="#777777"
+            android:layout_marginBottom="20dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtCourseTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Course Title"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtTeacher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teacher Name"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPlaylistId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="YouTube Playlist ID"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Duration (Example: 45 Videos)"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Course Description"
+                android:minLines="3"
+                android:gravity="top|start"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Thumbnail URL (Optional)"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkTrending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trending Course"
+            android:layout_marginTop="18dp"/>
+
+        <CheckBox
+            android:id="@+id/checkRecommended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recommended Course"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Course"
+            android:layout_marginTop="24dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</ScrollView>

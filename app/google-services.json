@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "889041530792",
+    "project_id": "padhteraho-2fa85",
+    "storage_bucket": "padhteraho-2fa85.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889041530792:android:4f064e502a279a5539f79d",
+        "android_client_info": {
+          "package_name": "com.example.padhteraho"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvEAujBpkDgkI1pf5czmcARUOLuslLxHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

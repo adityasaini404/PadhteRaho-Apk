@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingBottom="24dp"
+    android:background="@android:color/white">
+
+    <!-- Drag Handle -->
+
+    <View
+        android:layout_width="42dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:background="#D0D0D0"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Player Settings"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#111111"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"/>
+
+    <!-- Sleep Timer -->
+
+    <LinearLayout
+        android:id="@+id/itemSleepTimer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="24dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_lock_idle_alarm"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="18dp"
+            android:text="Sleep Timer"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_media_next"/>
+
+    </LinearLayout>
+
+    <!-- Picture in Picture -->
+
+    <LinearLayout
+        android:id="@+id/itemPip"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="24dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_slideshow"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="18dp"
+            android:text="Picture in Picture"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_media_next"/>
+
+    </LinearLayout>
+
+    <!-- About -->
+
+    <LinearLayout
+        android:id="@+id/itemAbout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="24dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_info_details"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="18dp"
+            android:text="About Player"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_media_next"/>
+
+    </LinearLayout>
+
+</LinearLayout>
