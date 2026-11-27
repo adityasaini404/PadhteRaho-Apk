@@ -1,0 +1,114 @@
+/* =========================================
+   PadhteRaho Custom Styles
+   ========================================= */
+
+:root {
+    --brand-blue: #1A56DB;
+    --brand-green: #10B981;
+    --brand-dark: #111827;
+    --brand-light: #F3F4F6;
+    --text-main: #111827;
+    --text-muted: #6B7280;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    /* Prevent horizontal scroll */
+    overflow-x: hidden; 
+}
+
+/* --- Phone Mockup Framing --- */
+.phone-mockup {
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.phone-mockup::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 100px; height: 20px;
+    background-color: #1f2937; /* gray-800 */
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    z-index: 20;
+}
+
+.phone-mockup img {
+    transition: transform 0.5s ease;
+}
+
+.phone-mockup:hover img {
+    transform: scale(1.02);
+}
+
+/* --- Animations --- */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes floatDelayed {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+    animation: floatDelayed 5s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+/* --- Scroll Reveal Logic --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Navigation Hover Effects --- */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--brand-blue);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* --- Custom Scrollbar (Optional) --- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
