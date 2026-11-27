@@ -20,13 +20,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS (Required) -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-    <!-- Tailwind CSS (Required) -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -95,14 +95,12 @@
 
     <!-- Hero Section -->
     <section id="home" class="pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden relative">
-        <!-- Background decorative elements -->
         <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-50 blur-3xl opacity-50 z-0"></div>
         <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-green-50 blur-3xl opacity-50 z-0"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
                 
-                <!-- Hero Content -->
                 <div class="text-center lg:text-left reveal">
                     <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 text-brand-blue text-sm font-semibold mb-6 border border-blue-100">
                         <i class="bi bi-android2"></i> Available for Android
@@ -124,7 +122,6 @@
                         </a>
                     </div>
 
-                    <!-- Dynamic Latest Version Info (Small) -->
                     <div id="hero-version-info" class="mt-6 text-sm text-gray-500 flex items-center justify-center lg:justify-start gap-2">
                         <span class="flex h-2 w-2 relative">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -134,13 +131,11 @@
                     </div>
                 </div>
 
-                <!-- Hero Mockup -->
                 <div class="relative mx-auto w-full max-w-sm lg:max-w-md reveal" style="transition-delay: 200ms;">
                     <div class="phone-mockup relative mx-auto border-gray-800 bg-gray-900 border-[10px] rounded-[2.5rem] h-[600px] w-[300px] shadow-2xl overflow-hidden">
                         <div class="w-[120px] h-[20px] bg-gray-900 absolute top-0 left-1/2 -translate-x-1/2 rounded-b-[1rem] z-20"></div>
                         <img src="./assets/screenshots/screen-home.png" alt="PadhteRaho Home Screen" class="w-full h-full object-cover" loading="eager">
                     </div>
-                    <!-- Decorative floating icons -->
                     <div class="absolute -right-6 top-20 bg-white p-3 rounded-2xl shadow-xl animate-float hidden md:block">
                         <i class="bi bi-play-circle text-brand-blue text-2xl"></i>
                     </div>
@@ -162,21 +157,18 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Screen 1 -->
                 <div class="reveal" style="transition-delay: 100ms;">
                     <div class="phone-mockup mx-auto border-gray-800 bg-gray-900 border-[8px] rounded-[2rem] h-[500px] w-[250px] shadow-xl overflow-hidden hover:-translate-y-2 transition-transform duration-300">
-                        <img src="./assets/screenshots/screen-explore (2).png" alt="Explore Courses" class="w-full h-full object-cover" loading="lazy">
+                        <img src="./assets/screenshots/screen-explore.png" alt="Explore Courses" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <h3 class="text-center font-semibold text-gray-800 mt-6">Explore Courses</h3>
                 </div>
-                <!-- Screen 2 -->
                 <div class="reveal" style="transition-delay: 200ms;">
                     <div class="phone-mockup mx-auto border-gray-800 bg-gray-900 border-[8px] rounded-[2rem] h-[500px] w-[250px] shadow-xl overflow-hidden hover:-translate-y-2 transition-transform duration-300">
                         <img src="./assets/screenshots/screen-notes.png" alt="Personal Notes" class="w-full h-full object-cover" loading="lazy">
                     </div>
                     <h3 class="text-center font-semibold text-gray-800 mt-6">Personal Notes</h3>
                 </div>
-                <!-- Screen 3 -->
                 <div class="reveal" style="transition-delay: 300ms;">
                     <div class="phone-mockup mx-auto border-gray-800 bg-gray-900 border-[8px] rounded-[2rem] h-[500px] w-[250px] shadow-xl overflow-hidden hover:-translate-y-2 transition-transform duration-300">
                         <img src="./assets/screenshots/screen-course.png" alt="Video Lectures" class="w-full h-full object-cover" loading="lazy">
@@ -196,7 +188,6 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Feature 1 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow reveal">
                     <div class="w-14 h-14 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center text-2xl mb-6">
                         <i class="bi bi-grid-1x2-fill"></i>
@@ -204,7 +195,6 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Educational Categories</h3>
                     <p class="text-gray-600 leading-relaxed">Explore a wide range of subjects from Programming and Web Development to Data Analytics and Android.</p>
                 </div>
-                <!-- Feature 2 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow reveal" style="transition-delay: 100ms;">
                     <div class="w-14 h-14 bg-green-50 text-brand-green rounded-xl flex items-center justify-center text-2xl mb-6">
                         <i class="bi bi-play-btn-fill"></i>
@@ -212,7 +202,6 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Video-Based Learning</h3>
                     <p class="text-gray-600 leading-relaxed">Learn directly from the best teachers with high-quality, curated video lectures for every topic.</p>
                 </div>
-                <!-- Feature 3 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow reveal" style="transition-delay: 200ms;">
                     <div class="w-14 h-14 bg-yellow-50 text-yellow-600 rounded-xl flex items-center justify-center text-2xl mb-6">
                         <i class="bi bi-map-fill"></i>
@@ -220,7 +209,6 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Learning Roadmaps</h3>
                     <p class="text-gray-600 leading-relaxed">Follow step-by-step guides and download PDF roadmaps to master your skills efficiently.</p>
                 </div>
-                <!-- Feature 4 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow reveal">
                     <div class="w-14 h-14 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-2xl mb-6">
                         <i class="bi bi-journal-text"></i>
@@ -228,7 +216,6 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Personal Notes</h3>
                     <p class="text-gray-600 leading-relaxed">Keep all your important PDF notes, cheatsheets, and study materials organized in one place.</p>
                 </div>
-                <!-- Feature 5 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow reveal" style="transition-delay: 100ms;">
                     <div class="w-14 h-14 bg-red-50 text-red-500 rounded-xl flex items-center justify-center text-2xl mb-6">
                         <i class="bi bi-clock-history"></i>
@@ -236,7 +223,6 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-3">Continue Learning</h3>
                     <p class="text-gray-600 leading-relaxed">Pick up right where you left off. Track your daily progress and maintain your learning streak.</p>
                 </div>
-                <!-- Feature 6 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow reveal" style="transition-delay: 200ms;">
                     <div class="w-14 h-14 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center text-2xl mb-6">
                         <i class="bi bi-cpu-fill"></i>
@@ -313,19 +299,16 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Step 1 -->
                 <div class="bg-gray-800 p-8 rounded-2xl relative reveal">
                     <div class="absolute -top-6 left-8 w-12 h-12 bg-brand-blue rounded-full flex items-center justify-center text-xl font-bold shadow-lg">1</div>
                     <h3 class="text-xl font-bold mt-4 mb-3">Download APK</h3>
                     <p class="text-gray-400">Click the download button below to get the latest APK file directly from GitHub.</p>
                 </div>
-                <!-- Step 2 -->
                 <div class="bg-gray-800 p-8 rounded-2xl relative reveal" style="transition-delay: 100ms;">
                     <div class="absolute -top-6 left-8 w-12 h-12 bg-brand-green rounded-full flex items-center justify-center text-xl font-bold shadow-lg">2</div>
                     <h3 class="text-xl font-bold mt-4 mb-3">Open the File</h3>
                     <p class="text-gray-400">Locate the downloaded APK file on your device and tap to open it.</p>
                 </div>
-                <!-- Step 3 -->
                 <div class="bg-gray-800 p-8 rounded-2xl relative reveal" style="transition-delay: 200ms;">
                     <div class="absolute -top-6 left-8 w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-xl font-bold shadow-lg">3</div>
                     <h3 class="text-xl font-bold mt-4 mb-3">Allow Installation</h3>
@@ -333,7 +316,6 @@
                 </div>
             </div>
 
-            <!-- Security Note -->
             <div class="mt-12 bg-gray-800/50 border border-gray-700 rounded-xl p-6 flex items-start gap-4 max-w-3xl mx-auto reveal">
                 <i class="bi bi-shield-exclamation text-yellow-500 text-2xl mt-1"></i>
                 <div>
@@ -348,22 +330,18 @@
     <section id="download" class="py-24 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-brand-light rounded-3xl p-8 md:p-12 shadow-sm border border-gray-100 text-center relative overflow-hidden reveal">
-                <!-- Decorative background -->
                 <div class="absolute top-0 right-0 w-64 h-64 bg-blue-100 rounded-full blur-3xl opacity-50 -mr-20 -mt-20"></div>
                 
                 <img src="./assets/logo.png" alt="PadhteRaho Logo" class="w-20 h-20 mx-auto mb-6 rounded-2xl shadow-md">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ready to Start Learning?</h2>
                 <p class="text-gray-600 mb-8 max-w-lg mx-auto">Download the latest version of PadhteRaho and take your learning journey to the next level.</p>
                 
-                <!-- Dynamic Download Container -->
                 <div id="download-container" class="flex flex-col items-center justify-center min-h-[120px]">
-                    <!-- Loading State (Shown by default before JS fetches) -->
                     <div id="download-loading" class="flex flex-col items-center gap-3">
                         <div class="w-8 h-8 border-4 border-brand-blue border-t-transparent rounded-full animate-spin"></div>
                         <p class="text-gray-500 text-sm">Fetching latest release info...</p>
                     </div>
 
-                    <!-- Success State (Hidden by default) -->
                     <div id="download-success" class="hidden flex-col items-center">
                         <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                             <a id="apk-download-btn" href="#" class="bg-brand-blue hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-3 w-full sm:w-auto">
@@ -382,7 +360,6 @@
                         </div>
                     </div>
 
-                    <!-- Error State (Hidden by default) -->
                     <div id="download-error" class="hidden flex-col items-center">
                         <p class="text-red-500 mb-4 flex items-center gap-2"><i class="bi bi-exclamation-circle"></i> Unable to fetch the latest release automatically.</p>
                         <a href="https://github.com/adityasaini404/PadhteRaho-Apk/releases/latest" target="_blank" rel="noopener noreferrer" class="bg-gray-800 hover:bg-gray-900 text-white px-8 py-3 rounded-full font-semibold transition-all flex items-center justify-center gap-2">
@@ -400,7 +377,6 @@
     <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-3 gap-8 items-center md:items-start">
-                <!-- Brand -->
                 <div class="text-center md:text-left">
                     <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
                         <img src="./assets/logo.png" alt="PadhteRaho Logo" class="w-8 h-8 rounded-lg">
@@ -411,7 +387,6 @@
                     </p>
                 </div>
 
-                <!-- Links -->
                 <div class="text-center md:text-left">
                     <h4 class="text-white font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2 text-sm">
@@ -421,7 +396,6 @@
                     </ul>
                 </div>
 
-                <!-- Developer -->
                 <div class="text-center md:text-left">
                     <h4 class="text-white font-semibold mb-4">Connect</h4>
                     <ul class="space-y-2 text-sm">
@@ -443,15 +417,11 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
     <button id="back-to-top" class="fixed bottom-6 right-6 bg-brand-blue text-white w-12 h-12 rounded-full shadow-lg hover:bg-blue-700 transition-all opacity-0 invisible focus:outline-none z-50 flex items-center justify-center">
         <i class="bi bi-arrow-up text-xl"></i>
     </button>
 
-    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JS -->
     <script src="./js/script.js"></script>
 </body>
 </html>
